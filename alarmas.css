@@ -54,6 +54,19 @@ body{
     color: red;
     
 }
+/* Menu hamburguesa  */
+
+.checkbutton{
+    font-size: 30px;
+    color:black;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none; 
+}
+
+#check{
+    display: none;
+}
 
 .hero{
     display: flex;
@@ -71,7 +84,7 @@ body{
     
 }
 .hero-text h1 {
-    color: rgb(100, 100, 100);
+    color: rgb(158, 158, 6);
     font-size: 40px;
     
 }
@@ -106,31 +119,99 @@ body{
 
 .marcas-alarmas-img{
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .X28-img{
-    background-image: url(x28-img.jpg);
+    background-image: url(x28-img3.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 250px;
+   background-repeat: no-repeat;
+   background-size: cover;
+    width: 300px;
+    height: 200px;
     border-radius: 5px;
-    box-shadow: blue 20px;
+
 }
 
 .DSC-img {
-    background-image: url(DSC-img.jpg);
+    background-image: url(DSC-img2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 450px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     border-radius: 5px;
 }
 
+.alarms-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 70px 50px;
+}
 
+.alarms-product-text{
+    font-size: 20px;
+    font-weight:500;
+    color: white;
+    
+    padding-top: 30px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alarms-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color:rgb(149, 149, 149);
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+
+}
+
+.alarm-card-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+  
+
+
+.alarms-cards:first-child .alarm-card-img{
+    background-image: url(sensor-mov-img2.jpg);
+} 
+.alarms-cards:nth-child(2) .alarm-card-img{
+    background-image: url(sensor-mag-img.webp);
+}
+.alarms-cards:nth-child(3) .alarm-card-img{
+    background-image: url(teclado-img3.jfif);
+}
+.alarms-cards:nth-child(4) .alarm-card-img{
+    background-image: url(sirena-img.jpg);
+}
+.alarms-cards:nth-child(5) .alarm-card-img{
+    background-image: url(barreras-img.jpg);
+}
+.alarms-cards:nth-child(6) .alarm-card-img{
+    background-image: url(control-remoto-img2.png);
+}
+.alarms-cards:last-child .alarm-card-img{
+    background-image: url(rotura-vidrio-img2.jpg);
+}
 
 
 
@@ -220,4 +301,237 @@ footer{
     display: flex;
     justify-content: center;
     padding-top: 30px;
+}
+
+@media (max-width: 1160px){
+    .hero-text h1 {
+        font-size: 30px;   
+    }
+    .hero-text p {
+        font-size: 20px;
+        font-weight: 700;
+        width: 550px;
+    }
+    
+    .hero-img {
+        width: 400px;
+        height: 220px;
+      
+    }
+    .marcas-alarmas h2 {
+      
+        font-size: 30px;
+    }
+    
+}
+
+ @media (max-width: 950px){
+    .hero-text h1 {
+        font-size: 25px;   
+    }
+    .hero-text p {
+        font-size: 18px;
+        font-weight: 700;
+        width: 450px;
+    }
+    
+    .hero-img {
+        width: 380px;
+        height: 200px;
+      
+    }
+    .marcas-alarmas h2 {
+        font-size: 25px;
+    }
+    .X28-img{
+        width: 250px;
+        height: 150px; 
+    }
+    
+    .DSC-img {
+        width: 250px;
+        height: 150px; 
+    }
+    .alarms-product-text{
+        font-size: 18px;
+    }  
+}
+
+@media (max-width: 840px){
+    .navbar-list li a {
+        font-size: 17px;
+     }
+     .navbar-list{
+         gap: 30px;
+     }
+    .hero-text h1 {
+        font-size: 20px;   
+    }
+    .hero-text p {
+        font-size: 15px;
+        font-weight: 700;
+        width: 400px;
+    }
+    .hero-img {
+        width: 300px;
+        height: 160px;
+      
+    }
+    .marcas-alarmas h2 {
+        font-size: 20px;
+    }
+    .X28-img{
+        width: 200px;
+        height: 100px; 
+    }
+    
+    .DSC-img {
+        width: 200px;
+        height: 100px;
+    }
+    .alarms-product-text{
+        font-size: 15px;
+    }  
+    .contact-info{
+        font-size: 15px;
+        }
+   .info-client{
+        font-size: 15px;
+        }     
+        button{
+            height: 30px;
+            width: 60px;
+            font-size: 13px;
+            font-weight: 800;
+         }
+        
+        .whatsapp{
+            height: 50px;
+            width: 50px;
+        }      
+}
+
+@media (max-width: 755px){
+    .header{
+        height: 70px;
+    }
+    .hero{
+        padding-top: 70px;
+    }
+    .navbar-list li a {
+        font-size: 15px;
+     }
+     .navbar-list{
+         gap: 25px;
+     }
+     .hero-text h1 {
+        font-size: 20px;   
+    }
+    .hero-text p {
+        font-size: 15px;
+        font-weight: 700;
+        width: 320px;
+    }
+    .hero-img {
+        width: 300px;
+        height: 160px;
+      
+    }
+    .marcas-alarmas h2 {
+        font-size: 18px;
+    }
+    .X28-img{
+        width: 200px;
+        height: 100px; 
+    }
+    
+    .DSC-img {
+        width: 200px;
+        height: 100px;
+    }
+    .alarms-product-text{
+        font-size: 15px;
+    }  
+
+    .alarms-cards{
+        width: 200px;
+        height: 250px;   
+    }
+    
+    .alarm-card-img{
+        width: 150px;
+        height: 150px;
+    }
+     
+#contact{
+        display: flex;
+        flex-direction: column;
+     
+        align-items: flex-start;
+        padding-left: 100px ;
+}    
+.contact-info{
+    font-size: 18px;
+    gap: 10px;
+    margin-bottom: 15px;
+    }
+.info-client{
+    font-size: 18px;
+    }     
+    button{
+        height: 30px;
+        width: 60px;
+        font-size: 13px;
+        font-weight: 800;
+     }
+    
+    .whatsapp{
+        height: 50px;
+        width: 50px;
+    }     
+}
+
+
+
+
+@media (max-width: 650px){
+
+    .checkbutton{
+        display: block;
+    }
+    #check:checked ~ ul{
+         left: 0;
+      }
+  
+    .navbar-list{
+        display: block;
+        position: fixed; 
+        width: 100%;
+        background-color: rgb(50, 50, 50);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s; 
+    } 
+    .navbar-list li{
+        margin: 25px 0;
+    }
+    .navbar-list li a{
+        font-size: 25px;
+    }
+    .hero-text h1 {
+        font-size: 20px;   
+    }
+    .hero-text p {
+        font-size: 13px;
+        font-weight: 700;
+        width: 300px;
+    }
+    .hero-img {
+        width: 270px;
+        height: 160px;
+      
+    }
+
+
 }

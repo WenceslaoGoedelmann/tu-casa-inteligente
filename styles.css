@@ -123,13 +123,20 @@ body{
 .about-us-text{
     display: flex;
     flex-direction: column;
+    gap: 10px ;
+
+}
+.about-us-text h2{
+    color: rgb(158, 158, 6);
+    font-size: 40px;
+}
+
+.about-us-text p{
     color: white;
     font-size: 25px;
     font-weight: 700;
     width: 600px;
-
 }
-
 
 #product{
     display: flex;
@@ -253,7 +260,7 @@ body{
     display: flex;
     padding: 30px;
     justify-content: space-evenly;
-}
+    }
 .contact-info{
     display: flex;
     flex-direction: column;
@@ -336,7 +343,217 @@ footer{
     padding-top: 30px;
 }
 
-@media (max-width: 650px){
+
+@media (max-width: 1070px){
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text p {
+        
+        font-size: 20px;
+    }
+    
+    .hero-img {
+        width: 450px;
+        height: 270px;
+        
+    }
+    .about-us-img{
+        width: 550px;
+        height: 250px;
+    }
+    
+    .about-us-text h2{
+        font-size: 30px;
+    }
+    
+    .about-us-text p{
+    
+        font-size: 20px;
+        font-weight: 500;
+        width: 500px;
+    }
+
+    
+}
+@media (max-width: 850px){
+    .navbar-list li a {
+       font-size: 17px;
+    }
+    .navbar-list{
+        gap: 30px;
+    }
+    .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero-text p {
+        font-size: 17px;
+    }
+    
+    .hero-img {
+        width: 380px;
+        height: 250px;
+        
+    }
+    .about-us-img{
+        width: 550px;
+        height: 250px;
+    }
+    
+    .about-us-text h2{
+        font-size: 25px;
+    }
+    
+    .about-us-text p{
+    
+        font-size: 17px;
+        font-weight: 400;
+        width: 370px;
+    }
+    .section-img{
+        padding: 1rem;
+        gap: 8px;
+        height: 550px;
+        }
+    .contact-info{
+        font-size: 15px;
+        }
+   .info-client{
+        font-size: 15px;
+        }     
+        button{
+            height: 30px;
+            width: 60px;
+            font-size: 13px;
+            font-weight: 800;
+         }
+        
+        .whatsapp{
+            height: 50px;
+            width: 50px;
+        }      
+}
+@media (max-width: 740px){
+    .header{
+        height: 70px;
+    }
+    #hero{
+
+        padding-top: 70px;
+    
+    }
+    .navbar-list li a {
+       font-size: 15px;
+    }
+    .navbar-list{
+        gap: 25px;
+    }
+    .hero-text h1 {
+        font-size: 22px;
+    }
+    .hero-text p {
+        font-size: 17px;
+    }
+    
+    .hero-img {
+        width: 320px;
+        height: 200px;
+        
+    }
+    .about-us-img{
+        width: 550px;
+        height: 250px;
+    }
+    
+    .about-us-text h2{
+        font-size: 20px;
+    }
+    
+    .about-us-text p{
+    
+        font-size: 15px;
+        font-weight: 400;
+        width: 310px;
+    }
+    .section-img{
+        padding: 1rem;
+        gap: 8px;
+        height: 750px;
+        }
+
+        .item:nth-child(1){
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background: url(security.jpg)no-repeat center/cover;
+            border-radius: 5px;
+            }
+            .item:nth-child(2){
+                grid-column: 2/3;
+                grid-row: 1/3;
+                background: url(luces.jpg)no-repeat center/cover;
+                border-radius: 5px;
+            }   
+            .item:nth-child(3){
+                grid-column: 1/2;
+                grid-row: 2/3;
+                background: url(smartphone.jpg) no-repeat center/cover;
+                border-radius: 5px;
+            }
+            .item:nth-child(4){
+                grid-column: 1/2;
+                grid-row: 3/5;
+                background: url(alarm-dsc.jpg)no-repeat center/cover;
+                border-radius: 5px;
+            }
+
+        .item:nth-child(5){
+            grid-column: 2/3;
+            grid-row: 3/4;
+            background: url(camera.jpg)  no-repeat  center/cover;
+            border-radius: 5px;
+            }
+      
+        .item:nth-child(6){
+                grid-column: 2/3;
+                grid-row: 4/5;
+                background: url(garage-control.jpg)no-repeat center/cover;
+                border-radius: 5px;
+            }         
+       .item:nth-child(7){
+                display: none;
+             } 
+
+    #contact{
+            display: flex;
+            flex-direction: column;
+         
+            align-items: flex-start;
+            padding-left: 100px ;
+    }    
+    .contact-info{
+        font-size: 20px;
+        gap: 10px;
+        margin-bottom: 15px;
+        }
+   .info-client{
+        font-size: 20px;
+        }     
+        button{
+            height: 30px;
+            width: 60px;
+            font-size: 13px;
+            font-weight: 800;
+         }
+        
+        .whatsapp{
+            height: 50px;
+            width: 50px;
+        }      
+}
+
+
+
+@media (max-width: 680px){
 
     .checkbutton{
         display: block;
@@ -350,9 +567,81 @@ footer{
         position: fixed; 
         width: 100%;
         background-color: rgb(50, 50, 50);
-        top: 100px;
+        top: 70px;
         left: -100%;
         text-align: center;
         transition: all .5s; 
     } 
+    .navbar-list li{
+        margin: 25px 0;
+    }
+    .navbar-list li a{
+        font-size: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 20px;
+    }
+    .hero-text p {
+        font-size: 15px;
+    }
+    
+    .hero-img {
+        width: 250px;
+        height: 150px;
+        
+    }
+    .about-us-img{
+        /* width: 600px; */
+        height: 220px;
+    }
+    
+    .about-us-text h2{
+        font-size: 18px;
+    }
+    
+    .about-us-text p{
+    
+        font-size: 13px;
+        font-weight: 400;
+        width: 250px;
+    }
+    #product{
+        gap: 30px;
+        padding: 50px 30px;
+    }
+    .card{
+        width: 200px;
+        height: 250px;
+       }
+    
+    
+      .button-product{
+      
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+      }
+      
+   
+    .card-img{
+        width: 150px;
+        height: 150px;
+       
+    }
+    .contact-info{
+        font-size: 15px;
+        gap: 10px;
+        margin-bottom: 15px;
+        }
+   .info-client{
+        font-size: 15px;
+        } 
+        footer{
+            font-size: 12px;
+            height: 30px;
+            width: 100%;
+            padding-top: 1px;
+        }
+
 }

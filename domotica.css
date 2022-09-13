@@ -54,6 +54,18 @@ body{
     color: red;
     
 }
+/* Menu hamburguesa  */
+.checkbutton{
+    font-size: 30px;
+    color:black;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none; 
+}
+
+#check{
+    display: none;
+}
 .hero{
     display: flex;
     justify-content: space-around;
@@ -70,7 +82,7 @@ body{
     
 }
 .hero-text h1 {
-    color: rgb(100, 100, 100);
+    color: rgb(158, 158, 6);
     font-size: 40px;
     
 }
@@ -90,6 +102,63 @@ body{
     height: 350px;
     border-radius: 5px;
 }
+.domotic-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 70px 50px;
+}
+.domotic-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color:rgb(149, 149, 149);
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.domotic-card-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+.domotic-cards h2 {
+    color: white;
+} 
+
+
+.domotic-cards:first-child .domotic-card-img{
+    background-image: url(domotic-luces-img.jpg);
+} 
+.domotic-cards:nth-child(2) .domotic-card-img{
+    background-image: url(domotic-car-img.jpg);
+}
+.domotic-cards:nth-child(3) .domotic-card-img{
+    background-image: url(domotic-persianas-img.jpg);
+}
+.domotic-cards:nth-child(4) .domotic-card-img{
+    background-image: url(domotic-clima-img.jpg);
+}
+
+.domotic-cards:nth-child(5) .domotic-card-img{
+    background-image: url(domotic-electro-img.jpg);
+}
+.domotic-cards:nth-child(6) .domotic-card-img{
+    background-image: url(domotic-necesitas-img.jpg);
+}
+
+
 
 
 
@@ -178,4 +247,217 @@ footer{
     display: flex;
     justify-content: center;
     padding-top: 30px;
+}
+
+
+
+
+@media (max-width: 1180px){
+        .hero-text h1 {
+            font-size: 30px;   
+        }
+        .hero-text p {
+            font-size: 20px;
+            font-weight: 700;
+            width: 500px;
+        }
+        
+        .hero-img {
+            width: 400px;
+            height: 250px;
+            background-position: -110px;
+        }
+      
+    }  
+
+   @media (max-width: 950px){
+        .hero-text h1 {
+            font-size: 25px;   
+        }
+        .hero-text p {
+            font-size: 18px;
+            font-weight: 700;
+            width: 450px;
+        }
+        
+        .hero-img {
+            width: 380px;
+            height: 230px;
+            background-position: -110px;
+        }
+        .domotic-cards{
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+        
+        }
+        
+        .domotic-card-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10%;
+        }
+         
+        .domotic-cards h2 {
+            font-size: 20px;
+        } 
+
+    }
+    @media (max-width: 820px){
+        .navbar-list li a {
+            font-size: 17px;
+         }
+         .navbar-list{
+             gap: 30px;
+         }
+        .hero-text h1 {
+            font-size: 20px;   
+        }
+        .hero-text p {
+            font-size: 15px;
+            font-weight: 700;
+            width: 420px;
+        }
+        .hero-img {
+            width: 280px;
+            height: 160px;
+            background-position: -70px;
+        }
+        .domotic-cards{
+            width: 180px;
+            height: 220px;
+            border-radius: 10px;
+        
+        }
+        
+        .domotic-card-img{
+            width: 120px;
+            height: 120px;
+            border-radius: 10%;
+        }
+         
+        .domotic-cards h2 {
+            font-size: 15px;
+        } 
+
+        .contact-info{
+            font-size: 15px;
+            }
+       .info-client{
+            font-size: 15px;
+            }     
+            button{
+                height: 30px;
+                width: 60px;
+                font-size: 13px;
+                font-weight: 800;
+             }
+            
+            .whatsapp{
+                height: 50px;
+                width: 50px;
+            }     
+    }
+    
+    @media (max-width: 720px){
+        .header{
+            height: 70px;
+        }
+        .hero{
+            padding-top: 70px;
+        }
+        .navbar-list li a {
+            font-size: 15px;
+         }
+         .navbar-list{
+             gap: 25px;
+         }
+        .navbar-list li a {
+            font-size: 17px;
+         }
+         .navbar-list{
+             gap: 30px;
+         }
+        .hero-text h1 {
+            font-size: 18px;   
+        }
+        .hero-text p {
+            font-size: 13px;
+            font-weight: 700;
+            width: 380px;
+        }
+        .hero-img {
+            width: 230px;
+            height: 140px;
+            background-position: -70px;
+        }
+        #contact{
+            display: flex;
+            flex-direction: column;
+         
+            align-items: flex-start;
+            padding-left: 100px ;
+    }    
+    .contact-info{
+        font-size: 18px;
+        gap: 10px;
+        margin-bottom: 15px;
+        }
+    .info-client{
+        font-size: 18px;
+        }     
+        button{
+            height: 30px;
+            width: 60px;
+            font-size: 13px;
+            font-weight: 800;
+         }
+        
+        .whatsapp{
+            height: 50px;
+            width: 50px;
+        }  
+
+    }
+
+
+@media (max-width: 630px){
+
+    .checkbutton{
+        display: block;
+    }
+    #check:checked ~ ul{
+         left: 0;
+      }
+  
+    .navbar-list{
+        display: block;
+        position: fixed; 
+        width: 100%;
+        background-color: rgb(50, 50, 50);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s; 
+    } 
+    .navbar-list li{
+        margin: 25px 0;
+    }
+    .navbar-list li a{
+        font-size: 25px;
+    }
+    .hero-text h1 {
+        font-size: 18px;   
+    }
+    .hero-text p {
+        font-size: 13px;
+        font-weight: 700;
+        width: 330px;
+    }
+    .hero-img {
+        width: 230px;
+        height: 140px;
+        background-position: -70px;
+    }
+
 }
