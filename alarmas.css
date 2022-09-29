@@ -58,7 +58,7 @@ body{
 
 .checkbutton{
     font-size: 30px;
-    color:black;
+    color:white;
     margin-right: 20px;
     cursor: pointer;
     display: none; 
@@ -96,7 +96,7 @@ body{
 }
 
 .hero-img {
-    background-image: url(call-center2.jpg);
+    background-image: url(security.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,6 +229,11 @@ body{
     font-size: 20px;
     font-weight:250;
 }
+.contact-info a{
+    color: white; 
+   text-decoration: underline;
+   margin-left: 5px;
+}     
 .redes{
     display: flex;
     flex-direction: row;
@@ -535,3 +540,109 @@ footer{
 
 
 }
+
+@media (max-width: 420px){
+
+    .logo{
+    height: 30px;
+    }
+
+    .checkbutton{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    .navbar-list li{
+        margin: 15px 0;
+    }
+    .navbar-list li a{
+        font-size: 15px;
+    }
+
+    .hero-text{
+        gap: 5px;   
+    }
+    .hero-text h1 {
+        font-size: 12px;
+    }
+    .hero-text p {
+        font-size: 10px;
+        font-weight: 700;
+        width: 180px;
+    }
+    
+    .hero-img {
+        width: 180px;
+        height: 100px;
+    }
+    .marcas-alarmas h2 {
+      
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .marcas-alarmas-img{
+        gap: 15px;
+    }
+    .X28-img{
+        width: 150px;
+        height: 75px;
+  
+    }
+    .DSC-img {
+        width: 150px;
+        height: 75px;
+    }
+    .contact-info{
+        font-size: 15px;
+      gap: 10px;
+     margin-bottom: 10px;
+        }
+    
+ .info-client{
+            padding-left: 40px; 
+        } 
+    
+        #contact{
+            padding-left: 30px ;
+        } 
+}
+
+
+@media (max-width: 375px){
+
+    .hero-text p {
+        font-size: 8px;
+       
+        width: 160px;
+    }
+    .contact-info{
+        font-size: 13px;
+        gap: 10px;
+        margin-bottom: 15px;
+        }
+    
+    .info-client{
+        font-size: 13px;
+        } 
+    
+        #contact{
+            padding-left: 40px ;
+        }    
+    
+    
+      /*   .contact-info{
+            font-size: 15px;
+            gap: 10px;
+            margin-bottom: 15px;
+            } */
+       .info-client{
+           
+            padding-left: 33px; 
+            } 
+    
+        footer{
+            font-size: 10px;
+            height: 30px;
+            width: 100%;
+            padding-top: 1px;
+        }
+    }

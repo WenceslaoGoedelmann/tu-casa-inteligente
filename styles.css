@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+   padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -16,7 +16,10 @@ body{
 }
 .section-container {
     background-color: rgb(50, 50, 50);
+    width: 100%;
+    
 }
+
 
 .header{
     margin: 0 auto;
@@ -66,13 +69,16 @@ body{
 
 /* HERO */
 
+
 #hero{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+   margin: 0 auto; 
     padding-top: 100px;
     align-content: center;
+    
+   
 }
 .hero-text{
     display: flex;
@@ -107,6 +113,7 @@ body{
     align-items: center;
     justify-content: space-around;
     gap: 15px;
+    
 }
 
 
@@ -145,6 +152,7 @@ body{
     flex-wrap: wrap;
     gap: 40px;
     padding: 70px 50px;
+   
 }
 .card{
     display: flex;
@@ -260,6 +268,7 @@ body{
     display: flex;
     padding: 30px;
     justify-content: space-evenly;
+   
     }
 .contact-info{
     display: flex;
@@ -269,6 +278,11 @@ body{
     font-size: 20px;
     font-weight:250;
 }
+.contact-info a{
+    color: white; 
+   text-decoration: underline;
+   margin-left: 5px;
+}     
 .redes{
     display: flex;
     flex-direction: row;
@@ -528,7 +542,7 @@ footer{
             flex-direction: column;
          
             align-items: flex-start;
-            padding-left: 100px ;
+            padding-left: 150px ;
     }    
     .contact-info{
         font-size: 20px;
@@ -537,6 +551,7 @@ footer{
         }
    .info-client{
         font-size: 20px;
+       /*  padding-left: 45px; */
         }     
         button{
             height: 30px;
@@ -628,7 +643,14 @@ footer{
         width: 150px;
         height: 150px;
        
+
     }
+
+    #contact{
+        padding-left: 200px ;
+    }    
+
+
     .contact-info{
         font-size: 15px;
         gap: 10px;
@@ -636,6 +658,7 @@ footer{
         }
    .info-client{
         font-size: 15px;
+        /* padding-left: 100px; */
         } 
         footer{
             font-size: 12px;
@@ -644,4 +667,152 @@ footer{
             padding-top: 1px;
         }
 
+}
+
+@media (max-width: 420px){
+
+        .logo{
+        height: 30px;
+        }
+    
+        .checkbutton{
+            font-size: 25px;
+            margin-right: 10px;
+        }
+        .navbar-list li{
+            margin: 15px 0;
+        }
+        .navbar-list li a{
+            font-size: 15px;
+        }
+        .hero-text h1 {
+        font-size: 12px;
+         }
+        .hero-text p {
+        font-size: 10px;
+        }
+    
+        .hero-img {
+        width: 180px;
+        height: 100px;
+        margin-right: 5px;
+        }
+    #about-us{
+        margin: 0 auto;
+        padding: 30px 5px;
+        gap: 1px;
+     
+    }
+    .about-us-img{
+       width: 180px;
+        height: 125px;
+        margin-right: 5px;
+    }
+   .about-us-text{
+       gap: 2px; 
+
+    } 
+    .about-us-text h2{
+        font-size: 12px;
+    }
+    
+    .about-us-text p{
+        
+        font-size: 10px;
+        /* font-weight: 400; */
+      width: 180px;
+    }
+
+    #product{
+        gap: 20px;
+        padding: 15px 20px;
+    }
+    .card{
+        width: 150px;
+        height: 180px;
+       }
+     
+    .button-product{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+      }
+      
+   
+    .card-img{
+        width: 120px;
+        height: 100px;
+       
+    }
+
+    .section-img{
+          height: 500px;
+        }
+
+    .contact-info{
+        font-size: 15px;
+        gap: 10px;
+        margin-bottom: 15px;
+        }
+
+   .info-client{
+        font-size: 15px;
+        } 
+
+        #contact{
+            padding-left: 40px ;
+        }    
+    
+    
+      /*   .contact-info{
+            font-size: 15px;
+            gap: 10px;
+            margin-bottom: 15px;
+            } */
+       .info-client{
+           
+            padding-left: 45px; 
+            } 
+    
+        footer{
+            font-size: 10px;
+            height: 30px;
+            width: 100%;
+            padding-top: 1px;
+        }
+
+}
+@media (max-width: 375px){
+
+.contact-info{
+    font-size: 13px;
+    gap: 10px;
+    margin-bottom: 15px;
+    }
+
+.info-client{
+    font-size: 13px;
+    } 
+
+    #contact{
+        padding-left: 40px ;
+    }    
+
+
+  /*   .contact-info{
+        font-size: 15px;
+        gap: 10px;
+        margin-bottom: 15px;
+        } */
+   .info-client{
+       
+        padding-left: 33px; 
+        } 
+
+    footer{
+        font-size: 10px;
+        height: 30px;
+        width: 100%;
+        padding-top: 1px;
+    }
 }
