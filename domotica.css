@@ -536,6 +536,12 @@ footer{
         #contact{
             padding-left: 30px ;
         } 
+        footer{
+            font-size: 10px;
+            height: 30px;
+            width: 100%;
+            padding-top: 1px;
+        }
 }
 
 @media (max-width: 375px){
