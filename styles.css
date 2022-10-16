@@ -170,7 +170,7 @@ body{
 
 
   .button-product{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(200, 200, 200);
     width: 180px;
     height: 40px;
     color: black;
@@ -178,16 +178,35 @@ body{
     font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
+    border: 0.2px solid;
+    border-color: black;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: pulse ;
+    
+   animation-duration: 2s;
+    animation-iteration-count: infinite;
+  
     
   }
+  .card:nth-child(2) .button-product {
+    animation-delay: 0.5s;
+  }
+  .card:nth-child(3) .button-product {
+    animation-delay: 1s;
+  }
+  .card:nth-child(4) .button-product {
+    animation-delay: 1.5s;
+  }
+
   
   .button-product:hover{
     background-color: rgb(86, 86, 86);
     transition: all 0.4s linear;
-  }
+   
+   }
 
 .card-img{
     width: 200px;
