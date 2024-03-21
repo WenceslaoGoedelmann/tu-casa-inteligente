@@ -1,836 +1,798 @@
 * {
-    margin: 0;
-   padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-html{
-    scroll-behavior: smooth; /* para que cuando un boton de la navbar me lleve a una sesion de la pagina el scrolleo sea suave */
-    scroll-padding-top: 100px;
+html {
+  scroll-behavior: smooth; /* para que cuando un boton de la navbar me lleve a una sesion de la pagina el scrolleo sea suave */
+  scroll-padding-top: 100px;
 }
-body{
-    width: 100%;
-    background-color: rgb(255, 255, 255);
+body {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 .section-container {
-    background-color: rgb(50, 50, 50);
-    width: 100%;
-    
+  background-color: rgb(50, 50, 50);
+  width: 100%;
 }
 
-
-.header{
-    margin: 0 auto;
-    width: 100%;
-    height: 100px;
-    padding: 0px 50px 0px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed; 
-    top: 0; 
-    z-index: 1;
-    background-color: rgb(50, 50, 50);
+.header {
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(50, 50, 50);
 }
 
-.logo-container{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    }
-
-.navbar-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+.logo-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
- .navbar-list li a {
-    color: white;
-    font-size: 20px;
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navbar-list li a {
+  color: white;
+  font-size: 20px;
 }
 
 /* Menu hamburguesa  */
 
-.checkbutton{
-    font-size: 30px;
-    color: white;
-    margin-right: 20px;
-    cursor: pointer;
-    display: none; 
+.checkbutton {
+  font-size: 30px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
 }
 
-#check{
-    display: none;
+#check {
+  display: none;
 }
 
 /* HERO */
 
-
-#hero{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   margin: 0 auto; 
-    padding-top: 100px;
-    align-content: center;
-    
-   
+#hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  align-content: center;
 }
-.hero-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 .hero-text h1 {
-    color: white;
-    font-size: 40px;
+  color: white;
+  font-size: 40px;
 }
 .hero-text p {
-    color: white;
-    font-size: 30px;
+  color: white;
+  font-size: 30px;
 }
 
 .hero-img {
-    background-image: url(smarthouse.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 550px;
-    height: 350px;
-    border-radius: 5px;
+  background-image: url(smarthouse.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 550px;
+  height: 350px;
+  border-radius: 5px;
 }
 
-#about-us{
-    margin: 0 auto;
-    padding: 50px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 15px;
-    
+#about-us {
+  margin: 0 auto;
+  padding: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
 }
 
-
-.about-us-img{
-    background-image: url(about-us-img.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 550px;
-    height: 350px;
-    border-radius: 5px;
+.about-us-img {
+  background-image: url(about-us-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 550px;
+  height: 350px;
+  border-radius: 5px;
 }
 
-.about-us-text{
-    display: flex;
-    flex-direction: column;
-    gap: 10px ;
-
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.about-us-text h2{
-    color: rgb(158, 158, 6);
-    font-size: 40px;
-}
-
-.about-us-text p{
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-    width: 600px;
+.about-us-text h2 {
+  color: rgb(158, 158, 6);
+  font-size: 40px;
 }
 
-#product{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 70px 50px;
-   
-}
-.card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    background-color:rgb(149, 149, 149);
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-
+.about-us-text p {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  width: 600px;
 }
 
-
-  .button-product{
-    background-color: rgb(200, 200, 200);
-    width: 180px;
-    height: 40px;
-    color: black;
-    font-weight: 800;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 0.2px solid;
-    border-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: pulse ;
-    
-   animation-duration: 2s;
-    animation-iteration-count: infinite;
-  
-    
-  }
-  .card:nth-child(2) .button-product {
-    animation-delay: 0.5s;
-  }
-  .card:nth-child(3) .button-product {
-    animation-delay: 1s;
-  }
-  .card:nth-child(4) .button-product {
-    animation-delay: 1.5s;
-  }
-
-  
-  .button-product:hover{
-    background-color: rgb(86, 86, 86);
-    transition: all 0.4s linear;
-   
-   }
-
-.card-img{
-    width: 200px;
-    height: 150px;
-    border-radius: 10%;
-    background-size: cover;
-    background-position: center;
-   
+#product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 70px 50px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: rgb(149, 149, 149);
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
 }
 
+.button-product {
+  background-color: rgb(200, 200, 200);
+  width: 180px;
+  height: 40px;
+  color: black;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0.2px solid;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse;
 
-.card:first-child .card-img{
-    background-image: url(img-alarm.jpg);
-} 
-.card:nth-child(2) .card-img{
-    background-image: url(img-camaras.jpg);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
-.card:nth-child(3) .card-img{
-    background-image: url(img-domotica.jpg);
+.card:nth-child(2) .button-product {
+  animation-delay: 0.5s;
+}
+.card:nth-child(3) .button-product {
+  animation-delay: 1s;
+}
+.card:nth-child(4) .button-product {
+  animation-delay: 1.5s;
+}
+
+.button-product:hover {
+  background-color: rgb(86, 86, 86);
+  transition: all 0.4s linear;
+}
+
+.card-img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card:first-child .card-img {
+  background-image: url(img-alarm.jpg);
+}
+.card:nth-child(2) .card-img {
+  background-image: url(img-camaras.jpg);
+}
+.card:nth-child(3) .card-img {
+  background-image: url(img-domotica.jpg);
 }
 .card:last-child .card-img {
-    background-image: url(img-necesidad.jpg);
+  background-image: url(img-necesidad.jpg);
 }
 
-.section-img{
-    padding: 2rem;
-    display: grid;
-    gap: 10px;
-    height: 720px;
-    }
+.section-img {
+  padding: 2rem;
+  display: grid;
+  gap: 10px;
+  height: 720px;
+}
 
-.item:nth-child(1){
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background: url(camera.jpg)  no-repeat  center/cover;
-        border-radius: 5px;
-        }
-.item:nth-child(2){
-            grid-column: 2/3;
-            grid-row: 1/2;
-            background: url(security.jpg)no-repeat center/cover;
-            border-radius: 5px;
-            }
-        
-.item:nth-child(3){
-            grid-column: 3/4;
-            grid-row: 1/3;
-            background: url(luces.jpg)no-repeat center/cover;
-            border-radius: 5px;
-        }
-        
-.item:nth-child(4){
-            grid-column: 1/2;
-            grid-row: 2/4;
-            background: url(alarm-dsc.jpg)no-repeat center/cover;
-            border-radius: 5px;
-        }
-.item:nth-child(5){
-            grid-column: 2/3;
-            grid-row: 2/3;
-            background: url(smartphone.jpg) no-repeat center/cover;
-            border-radius: 5px;
-        }
-.item:nth-child(6){
-            grid-column: 2/3;
-            grid-row: 3/4;
-            background: url(smoke-alarms.jpg)no-repeat center/cover;
-            border-radius: 5px;
-         }
-.item:nth-child(7){
-            grid-column: 3/4;
-            grid-row: 3/4;
-            background: url(garage-control.jpg)no-repeat center/cover;
-            border-radius: 5px;
-        }
+.item:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background: url(camera.jpg) no-repeat center/cover;
+  border-radius: 5px;
+}
+.item:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background: url(security.jpg) no-repeat center/cover;
+  border-radius: 5px;
+}
 
-#contact{
-    display: flex;
-    padding: 30px;
-    justify-content: space-evenly;
-   
-    }
-.contact-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: white;
+.item:nth-child(3) {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background: url(luces.jpg) no-repeat center/cover;
+  border-radius: 5px;
+}
+
+.item:nth-child(4) {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  background: url(alarm-dsc.jpg) no-repeat center/cover;
+  border-radius: 5px;
+}
+.item:nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: url(smartphone.jpg) no-repeat center/cover;
+  border-radius: 5px;
+}
+.item:nth-child(6) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background: url(smoke-alarms.jpg) no-repeat center/cover;
+  border-radius: 5px;
+}
+.item:nth-child(7) {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  background: url(garage-control.jpg) no-repeat center/cover;
+  border-radius: 5px;
+}
+
+#contact {
+  display: flex;
+  padding: 30px;
+  justify-content: space-evenly;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 20px;
+  font-weight: 250;
+}
+.contact-info a {
+  color: white;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.instagram-icon {
+  background-image: url(Instagram-icon.png);
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-position: center;
+}
+.facebook-icon {
+  background-image: url(Facebook-icon.png);
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-position: center;
+}
+
+.info-client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  gap: 10px;
+}
+
+form input {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  padding: 0.5rem 1rem;
+  color: white;
+  width: 90%;
+  margin-top: 0.5rem;
+}
+
+form textarea {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  height: 35px;
+  width: 80px;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px solid black;
+}
+
+button:hover {
+  background-color: rgb(185, 185, 185);
+  transition: all 0.4s linear;
+}
+
+.whatsapp {
+  background-image: url(WhatsApp.svg);
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  left: 10px;
+  bottom: 10px;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+@media (max-width: 1070px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
+  .hero-text p {
     font-size: 20px;
-    font-weight:250;
-}
-.contact-info a{
-    color: white; 
-   text-decoration: underline;
-   margin-left: 5px;
-}     
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
- }
-
- .instagram-icon{
-    background-image: url(Instagram-icon.png);
-    height: 35px;
-    width: 35px;
-    background-size: cover;
-    background-position: center;
- }
- .facebook-icon{
-    background-image: url(Facebook-icon.png);
-    height: 35px;
-    width: 35px;
-    background-size: cover;
-    background-position: center;
- }
-
-
-
- .info-client{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    font-weight: 700;
-
- }
- form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: white;
-    gap: 10px; 
-    
- }
-
- button{
-    height: 35px;
-    width: 80px;
-    font-size: 15px;
-    font-weight: 800;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 0px solid black;
- }
-
- button:hover{
-    background-color: rgb(185, 185, 185);
-    transition: all 0.4s linear;
   }
 
-.whatsapp{
-    background-image: url(WhatsApp.svg);
+  .hero-img {
+    width: 450px;
+    height: 270px;
+  }
+  .about-us-img {
+    width: 550px;
+    height: 250px;
+  }
+
+  .about-us-text h2 {
+    font-size: 30px;
+  }
+
+  .about-us-text p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 500px;
+  }
+}
+@media (max-width: 850px) {
+  .navbar-list li a {
+    font-size: 17px;
+  }
+  .navbar-list {
+    gap: 30px;
+  }
+  .hero-text h1 {
+    font-size: 25px;
+  }
+  .hero-text p {
+    font-size: 17px;
+  }
+
+  .hero-img {
+    width: 380px;
+    height: 250px;
+  }
+  .about-us-img {
+    width: 550px;
+    height: 250px;
+  }
+
+  .about-us-text h2 {
+    font-size: 25px;
+  }
+
+  .about-us-text p {
+    font-size: 17px;
+    font-weight: 400;
+    width: 370px;
+  }
+  .section-img {
+    padding: 1rem;
+    gap: 8px;
+    height: 550px;
+  }
+  .contact-info {
+    font-size: 15px;
+  }
+  .info-client {
+    font-size: 15px;
+  }
+  button {
+    height: 30px;
+    width: 60px;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .whatsapp {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (max-width: 740px) {
+  .header {
     height: 70px;
-    width: 70px;
-    position: fixed;
-    background-size: cover;
-    background-position: center; 
-    left: 10px;
-    bottom: 10px;
-}
+  }
+  #hero {
+    padding-top: 70px;
+  }
+  .navbar-list li a {
+    font-size: 15px;
+  }
+  .navbar-list {
+    gap: 25px;
+  }
+  .hero-text h1 {
+    font-size: 22px;
+  }
+  .hero-text p {
+    font-size: 17px;
+  }
 
-footer{
-    height: 80px;
-    width: 100%;
+  .hero-img {
+    width: 320px;
+    height: 200px;
+  }
+  .about-us-img {
+    width: 550px;
+    height: 250px;
+  }
+
+  .about-us-text h2 {
+    font-size: 20px;
+  }
+
+  .about-us-text p {
+    font-size: 15px;
+    font-weight: 400;
+    width: 310px;
+  }
+  .section-img {
+    padding: 1rem;
+    gap: 8px;
+    height: 750px;
+  }
+
+  .item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: url(security.jpg) no-repeat center/cover;
+    border-radius: 5px;
+  }
+  .item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background: url(luces.jpg) no-repeat center/cover;
+    border-radius: 5px;
+  }
+  .item:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: url(smartphone.jpg) no-repeat center/cover;
+    border-radius: 5px;
+  }
+  .item:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background: url(alarm-dsc.jpg) no-repeat center/cover;
+    border-radius: 5px;
+  }
+
+  .item:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: url(camera.jpg) no-repeat center/cover;
+    border-radius: 5px;
+  }
+
+  .item:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background: url(garage-control.jpg) no-repeat center/cover;
+    border-radius: 5px;
+  }
+  .item:nth-child(7) {
+    display: none;
+  }
+
+  #contact {
     display: flex;
-    justify-content: center;
-    padding-top: 30px;
+    flex-direction: column;
+
+    align-items: flex-start;
+    padding-left: 150px;
+  }
+  .contact-info {
+    font-size: 20px;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .info-client {
+    font-size: 20px;
+    /*  padding-left: 45px; */
+  }
+  button {
+    height: 30px;
+    width: 60px;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .whatsapp {
+    height: 50px;
+    width: 50px;
+  }
 }
 
+@media (max-width: 680px) {
+  .checkbutton {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 
-@media (max-width: 1070px){
-    .hero-text h1 {
-        font-size: 30px;
-    }
-    .hero-text p {
-        
-        font-size: 20px;
-    }
-    
-    .hero-img {
-        width: 450px;
-        height: 270px;
-        
-    }
-    .about-us-img{
-        width: 550px;
-        height: 250px;
-    }
-    
-    .about-us-text h2{
-        font-size: 30px;
-    }
-    
-    .about-us-text p{
-    
-        font-size: 20px;
-        font-weight: 500;
-        width: 500px;
-    }
+  .navbar-list {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .navbar-list li {
+    margin: 25px 0;
+  }
+  .navbar-list li a {
+    font-size: 25px;
+  }
 
-    
-}
-@media (max-width: 850px){
-    .navbar-list li a {
-       font-size: 17px;
-    }
-    .navbar-list{
-        gap: 30px;
-    }
-    .hero-text h1 {
-        font-size: 25px;
-    }
-    .hero-text p {
-        font-size: 17px;
-    }
-    
-    .hero-img {
-        width: 380px;
-        height: 250px;
-        
-    }
-    .about-us-img{
-        width: 550px;
-        height: 250px;
-    }
-    
-    .about-us-text h2{
-        font-size: 25px;
-    }
-    
-    .about-us-text p{
-    
-        font-size: 17px;
-        font-weight: 400;
-        width: 370px;
-    }
-    .section-img{
-        padding: 1rem;
-        gap: 8px;
-        height: 550px;
-        }
-    .contact-info{
-        font-size: 15px;
-        }
-   .info-client{
-        font-size: 15px;
-        }     
-        button{
-            height: 30px;
-            width: 60px;
-            font-size: 13px;
-            font-weight: 800;
-         }
-        
-        .whatsapp{
-            height: 50px;
-            width: 50px;
-        }      
-}
-@media (max-width: 740px){
-    .header{
-        height: 70px;
-    }
-    #hero{
+  .hero-text h1 {
+    font-size: 20px;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
 
-        padding-top: 70px;
-    
-    }
-    .navbar-list li a {
-       font-size: 15px;
-    }
-    .navbar-list{
-        gap: 25px;
-    }
-    .hero-text h1 {
-        font-size: 22px;
-    }
-    .hero-text p {
-        font-size: 17px;
-    }
-    
-    .hero-img {
-        width: 320px;
-        height: 200px;
-        
-    }
-    .about-us-img{
-        width: 550px;
-        height: 250px;
-    }
-    
-    .about-us-text h2{
-        font-size: 20px;
-    }
-    
-    .about-us-text p{
-    
-        font-size: 15px;
-        font-weight: 400;
-        width: 310px;
-    }
-    .section-img{
-        padding: 1rem;
-        gap: 8px;
-        height: 750px;
-        }
+  .hero-img {
+    width: 250px;
+    height: 150px;
+  }
+  .about-us-img {
+    /* width: 600px; */
+    height: 220px;
+  }
 
-        .item:nth-child(1){
-            grid-column: 1/2;
-            grid-row: 1/2;
-            background: url(security.jpg)no-repeat center/cover;
-            border-radius: 5px;
-            }
-            .item:nth-child(2){
-                grid-column: 2/3;
-                grid-row: 1/3;
-                background: url(luces.jpg)no-repeat center/cover;
-                border-radius: 5px;
-            }   
-            .item:nth-child(3){
-                grid-column: 1/2;
-                grid-row: 2/3;
-                background: url(smartphone.jpg) no-repeat center/cover;
-                border-radius: 5px;
-            }
-            .item:nth-child(4){
-                grid-column: 1/2;
-                grid-row: 3/5;
-                background: url(alarm-dsc.jpg)no-repeat center/cover;
-                border-radius: 5px;
-            }
+  .about-us-text h2 {
+    font-size: 18px;
+  }
 
-        .item:nth-child(5){
-            grid-column: 2/3;
-            grid-row: 3/4;
-            background: url(camera.jpg)  no-repeat  center/cover;
-            border-radius: 5px;
-            }
-      
-        .item:nth-child(6){
-                grid-column: 2/3;
-                grid-row: 4/5;
-                background: url(garage-control.jpg)no-repeat center/cover;
-                border-radius: 5px;
-            }         
-       .item:nth-child(7){
-                display: none;
-             } 
+  .about-us-text p {
+    font-size: 13px;
+    font-weight: 400;
+    width: 250px;
+  }
+  #product {
+    gap: 30px;
+    padding: 50px 30px;
+  }
+  .card {
+    width: 200px;
+    height: 250px;
+  }
 
-    #contact{
-            display: flex;
-            flex-direction: column;
-         
-            align-items: flex-start;
-            padding-left: 150px ;
-    }    
-    .contact-info{
-        font-size: 20px;
-        gap: 10px;
-        margin-bottom: 15px;
-        }
-   .info-client{
-        font-size: 20px;
-       /*  padding-left: 45px; */
-        }     
-        button{
-            height: 30px;
-            width: 60px;
-            font-size: 13px;
-            font-weight: 800;
-         }
-        
-        .whatsapp{
-            height: 50px;
-            width: 50px;
-        }      
+  .button-product {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .card-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #contact {
+    padding-left: 200px;
+  }
+
+  .contact-info {
+    font-size: 15px;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .info-client {
+    font-size: 15px;
+    /* padding-left: 100px; */
+  }
+  footer {
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+    padding-top: 1px;
+  }
 }
 
+@media (max-width: 420px) {
+  .logo {
+    height: 30px;
+  }
 
+  .checkbutton {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  .navbar-list li {
+    margin: 15px 0;
+  }
+  .navbar-list li a {
+    font-size: 15px;
+  }
+  .hero-text h1 {
+    font-size: 12px;
+  }
+  .hero-text p {
+    font-size: 10px;
+  }
 
-@media (max-width: 680px){
+  .hero-img {
+    width: 180px;
+    height: 100px;
+    margin-right: 5px;
+  }
+  #about-us {
+    margin: 0 auto;
+    padding: 30px 5px;
+    gap: 1px;
+  }
+  .about-us-img {
+    width: 180px;
+    height: 125px;
+    margin-right: 5px;
+  }
+  .about-us-text {
+    gap: 2px;
+  }
+  .about-us-text h2 {
+    font-size: 12px;
+  }
 
-    .checkbutton{
-        display: block;
-    }
-    #check:checked ~ ul{
-         left: 0;
-      }
-  
-    .navbar-list{
-        display: block;
-        position: fixed; 
-        width: 100%;
-        background-color: rgb(50, 50, 50);
-        top: 70px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s; 
-    } 
-    .navbar-list li{
-        margin: 25px 0;
-    }
-    .navbar-list li a{
-        font-size: 25px;
-    }
+  .about-us-text p {
+    font-size: 10px;
+    /* font-weight: 400; */
+    width: 180px;
+  }
 
-    .hero-text h1 {
-        font-size: 20px;
-    }
-    .hero-text p {
-        font-size: 15px;
-    }
-    
-    .hero-img {
-        width: 250px;
-        height: 150px;
-        
-    }
-    .about-us-img{
-        /* width: 600px; */
-        height: 220px;
-    }
-    
-    .about-us-text h2{
-        font-size: 18px;
-    }
-    
-    .about-us-text p{
-    
-        font-size: 13px;
-        font-weight: 400;
-        width: 250px;
-    }
-    #product{
-        gap: 30px;
-        padding: 50px 30px;
-    }
-    .card{
-        width: 200px;
-        height: 250px;
-       }
-    
-    
-      .button-product{
-      
-        width: 150px;
-        height: 30px;
-        font-size: 12px;
-      }
-      
-   
-    .card-img{
-        width: 150px;
-        height: 150px;
-       
+  #product {
+    gap: 20px;
+    padding: 15px 20px;
+  }
+  .card {
+    width: 150px;
+    height: 180px;
+  }
 
-    }
+  .button-product {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
 
-    #contact{
-        padding-left: 200px ;
-    }    
+  .card-img {
+    width: 120px;
+    height: 100px;
+  }
 
+  .section-img {
+    height: 500px;
+  }
 
-    .contact-info{
-        font-size: 15px;
-        gap: 10px;
-        margin-bottom: 15px;
-        }
-   .info-client{
-        font-size: 15px;
-        /* padding-left: 100px; */
-        } 
-        footer{
-            font-size: 12px;
-            height: 30px;
-            width: 100%;
-            padding-top: 1px;
-        }
+  .contact-info {
+    font-size: 15px;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
 
-}
+  .info-client {
+    font-size: 15px;
+  }
 
-@media (max-width: 420px){
+  #contact {
+    padding-left: 40px;
+  }
 
-        .logo{
-        height: 30px;
-        }
-    
-        .checkbutton{
-            font-size: 25px;
-            margin-right: 10px;
-        }
-        .navbar-list li{
-            margin: 15px 0;
-        }
-        .navbar-list li a{
-            font-size: 15px;
-        }
-        .hero-text h1 {
-        font-size: 12px;
-         }
-        .hero-text p {
-        font-size: 10px;
-        }
-    
-        .hero-img {
-        width: 180px;
-        height: 100px;
-        margin-right: 5px;
-        }
-    #about-us{
-        margin: 0 auto;
-        padding: 30px 5px;
-        gap: 1px;
-     
-    }
-    .about-us-img{
-       width: 180px;
-        height: 125px;
-        margin-right: 5px;
-    }
-   .about-us-text{
-       gap: 2px; 
-
-    } 
-    .about-us-text h2{
-        font-size: 12px;
-    }
-    
-    .about-us-text p{
-        
-        font-size: 10px;
-        /* font-weight: 400; */
-      width: 180px;
-    }
-
-    #product{
-        gap: 20px;
-        padding: 15px 20px;
-    }
-    .card{
-        width: 150px;
-        height: 180px;
-       }
-     
-    .button-product{
-        width: 100px;
-        height: 30px;
-        font-size: 12px;
-      }
-      
-   
-    .card-img{
-        width: 120px;
-        height: 100px;
-       
-    }
-
-    .section-img{
-          height: 500px;
-        }
-
-    .contact-info{
-        font-size: 15px;
-        gap: 10px;
-        margin-bottom: 15px;
-        }
-
-   .info-client{
-        font-size: 15px;
-        } 
-
-        #contact{
-            padding-left: 40px ;
-        }    
-    
-    
-      /*   .contact-info{
+  /*   .contact-info{
             font-size: 15px;
             gap: 10px;
             margin-bottom: 15px;
             } */
-       .info-client{
-           
-            padding-left: 45px; 
-            } 
-    
-        footer{
-            font-size: 10px;
-            height: 30px;
-            width: 100%;
-            padding-top: 1px;
-        }
+  .info-client {
+    padding-left: 45px;
+  }
 
+  footer {
+    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    padding-top: 1px;
+  }
 }
-@media (max-width: 375px){
-
-.contact-info{
+@media (max-width: 375px) {
+  .contact-info {
     font-size: 13px;
     gap: 10px;
     margin-bottom: 15px;
-    }
+  }
 
-.info-client{
+  .info-client {
     font-size: 13px;
-    } 
+  }
 
-    #contact{
-        padding-left: 40px ;
-    }    
-
+  #contact {
+    padding-left: 40px;
+  }
 
   /*   .contact-info{
         font-size: 15px;
         gap: 10px;
         margin-bottom: 15px;
         } */
-   .info-client{
-       
-        padding-left: 33px; 
-        } 
+  .info-client {
+    padding-left: 33px;
+  }
 
-    footer{
-        font-size: 10px;
-        height: 30px;
-        width: 100%;
-        padding-top: 1px;
-    }
+  footer {
+    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    padding-top: 1px;
+  }
 }
